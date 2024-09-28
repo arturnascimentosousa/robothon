@@ -18,12 +18,18 @@ driver = webdriver.Chrome()
 # message = driver.find_element(by=By.ID, value="message")
 # text = message.text
 
+
 empresa = "22896431000110"
+
 driver.get(f"https://www.reclameaqui.com.br/busca/?q={empresa}")
 score = driver.find_element(by=By.CLASS_NAME, value="score-search")
 nome = driver.find_element(by=By.CLASS_NAME, value="title-company-card")
 
 print(f"Nome: {nome.text}")
 print(f"Score: {score.text}")
+
+# # Outros sites que podemos usar
+# driver.get(f"https://consumidor.gov.br/pages/principal/")
+# driver.get(f"https://www.jusbrasil.com.br/consulta-processual/busca?q=")
 
 driver.quit()
