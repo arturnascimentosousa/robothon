@@ -71,7 +71,6 @@ def search_company_in_reclame_aqui(company_name):
     print(element_avg_notes.text)
 
     print("Tipos de problema")
-    problems = driver.find_elements
 
 
     
